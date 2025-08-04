@@ -1,6 +1,6 @@
 # 🌱 POWAR STEAM – P-Bit Firmware & Dashboard
 
-**P-Bit** is an educational microcontroller developed by [POWAR STEAM SL](https://www.powarsteam.es), designed to teach students about sustainability, climate change, and environmental sensing using hands-on STEAM tools.
+**P-Bit** is an educational microcontroller developed by [POWAR STEAM SL](https://www.powarsteam.com), designed to teach students about sustainability, climate change, and environmental sensing using hands-on STEAM tools.
 
 This repository contains:
 
@@ -48,7 +48,7 @@ It’s designed to be **used in classrooms** by K-12 students to run experiments
   diagrams/
   screenshots/
 
-LICENSE.md
+LICENSE
 README.md
 ```
 
@@ -86,7 +86,7 @@ This project is released for **educational and non-commercial use only**. Teache
 * Explore sensor-based experiments
 * Modify or expand upon it (with attribution)
 
-See [`LICENSE.md`](./LICENSE.md) for full terms of use.
+See [`LICENSE`](./LICENSE) for full terms of use.
 
 ---
 
@@ -94,7 +94,10 @@ See [`LICENSE.md`](./LICENSE.md) for full terms of use.
 
 This project may include contributions from academic partners, student developers, and STEAM education advocates.
 
-If you'd like to collaborate, contact us at **[pablo@powarsteam.com](mailto:pablo@powarsteam.com)**.
+🎥 Watch the P-Bit in action: [https://www.youtube.com/watch?v=ga6qz10fXHc](https://www.youtube.com/watch?v=ga6qz10fXHc)
+🌐 Learn more about the P-Bit: [https://www.powarsteam.es/en/pbit-environmental-mini-computer](https://www.powarsteam.es/en/pbit-environmental-mini-computer)
+
+If you'd like to collaborate, contact us at **[info@powarsteam.com](mailto:info@powarsteam.com)**.
 
 ---
 
@@ -106,7 +109,7 @@ This project is licensed under:
 
 No commercial use is allowed. For licensing opportunities or commercial collaborations, contact us directly.
 
-See [`LICENSE.md`](./LICENSE.md) for full details.
+See [`LICENSE`](./LICENSE) for full details.
 
 ---
 
@@ -114,4 +117,4 @@ See [`LICENSE.md`](./LICENSE.md) for full details.
 
 POWAR STEAM SL is a social-impact edtech company based in Barcelona, Spain. We design and manufacture tangible tools that help children **understand how the natural world works** – and how they can become **environmental changemakers**.
 
-Visit us at: 🌍 [www.powarsteam.es](https://www.powarsteam.es)
+Visit us at: 🌍 [www.powarsteam.com](https://www.powarsteam.com)
