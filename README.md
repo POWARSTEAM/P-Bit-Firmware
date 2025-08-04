@@ -1,68 +1,59 @@
 # 🌱 POWAR STEAM – P-Bit Firmware & Dashboard
 
-**P-Bit** is an educational microcontroller developed by [POWAR STEAM SL](https://www.powarsteam.com), designed to teach students about sustainability, climate change, and environmental sensing using hands-on STEAM tools.
+**P-Bit** is an educational environmental microcomputer developed by [POWAR STEAM SL](https://www.powarsteam.com), designed to help students understand sustainability, climate change, and environmental monitoring using tangible STEAM technology.
 
-This repository contains:
-
-* 🔧 The **firmware** for the P-Bit: sensor readings, BLE communication, and TFT screen display.
-* 🧪 A **web-based dashboard**: interactive and kid-friendly interface to visualize live data via Web Bluetooth.
+This repository serves as a collaboration hub for development of:
+- 🔧 New firmware versions
+- 🌐 BLE-based WebApp dashboards
+- 🧪 Experimental sensor integrations
 
 ---
 
-## 🧠 What is the P-Bit?
+## 🔍 What is the P-Bit?
 
-The P-Bit is a compact environmental data logger equipped with:
+The **P-Bit** is a compact, low-voltage data logger based on an ESP32. It features:
 
-* 🌡️ Air temperature and humidity sensors (DHT11 / DS18B20)
-* ☀️ Light sensor (LDR)
-* 🔊 Sound sensor (analog audio)
-* 🌱 Soil temperature and humidity probes
-* 🎛️ TFT display + rotary encoder for on-device navigation
-* 💡 RGB LED + buzzer for feedback
-* 📶 BLE connectivity to send sensor data to a web-based platform
+- 🌡️ Air temperature & humidity sensors (DHT11, DS18B20)  
+- ☀️ Light sensor (LDR)  
+- 🔊 Analog sound sensor  
+- 🌱 Soil temperature & moisture probes  
+- 🎛️ TFT screen + rotary encoder for navigation  
+- 💡 RGB LED + buzzer for feedback  
+- 📶 BLE for wireless data transfer  
 
-It’s designed to be **used in classrooms** by K-12 students to run experiments, collect real-world data, and explore how environmental factors impact ecosystems and sustainability challenges.
+It’s designed for **K-12 students** to explore science, technology, and sustainability through real-world data and experiments.
 
 ---
 
 ## 📁 Repository Structure
 
-```
-/firmware/
-  P-Bit.ino
-  /lib/               # Sensor libraries and hardware interfaces
-
-/webapp/
-  index.html
-  scripts.js
-  style.css
-
-/legacy/
-  firmware-pbit-v1.2.bin       # Current firmware binary (to flash)
-  pbit_base.ino                # Arduino IDE / PlatformIO base code
-  voltage_sensor_test.ino      # Experimental code for voltage sensor
-  tds_sensor_display.ino       # Experimental code for TDS sensor with enhanced screen UI
-
-/assets/
-  logo.png
-  diagrams/
-  screenshots/
-
-LICENSE
-README.md
+```bash
+.
+├── Arduino(ino)/             # Final .ino source code for current and stable firmware
+├── dashboard/                # Placeholder – future WebApp version (under RMIT development)
+├── firmware/                 # Placeholder – production firmware will be added here
+├── legacy/                   # Archive of older or experimental firmware and WebApps
+│   ├── arduino(ino)/         # Experimental Arduino source code and test sketches
+│   ├── firmware/             # Compiled binaries, flasher tool, audio calibration firmwares
+│   └── P-Bit_WebApp/         # Working BLE-connected WebApp (demo version)
+└── assets/                   # Logos and shared assets
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-*(To be completed as the project progresses and files are integrated)*
+> *(Detailed instructions will be added once the RMIT versions are merged into `main`)*
+
+For now:
+- To test BLE communication, use the firmware in `legacy/arduino(ino)/Test Codes/PBIT_BLE_JSON_WORKING`
+- Pair it with the WebApp in `legacy/P-Bit_WebApp/` by opening `index.html` in Chrome
 
 ---
 
-## 📡 Data Format
+## 📡 BLE Data Format
 
-Sensor data is sent via BLE in the following JSON structure:
+Sensor data is transmitted from the P-Bit using this JSON structure:
 
 ```json
 {
@@ -76,28 +67,35 @@ Sensor data is sent via BLE in the following JSON structure:
 }
 ```
 
----
-
-## 🎓 Educational Use
-
-This project is released for **educational and non-commercial use only**. Teachers, students, and institutions are encouraged to:
-
-* Use it in classroom settings
-* Explore sensor-based experiments
-* Modify or expand upon it (with attribution)
-
-See [`LICENSE`](./LICENSE) for full terms of use.
+This ensures consistency across firmware and dashboard development.
 
 ---
 
-## 🤝 Collaborators & Acknowledgments
+## 🧠 Collaboration Guidelines
 
-This project may include contributions from academic partners, student developers, and STEAM education advocates.
+- RMIT students and collaborators: please work in your own branch  
+- Merge into `main` only after internal testing and code review  
+- Follow the folder structure conventions  
+- Document changes clearly in commit messages  
 
-🎥 Watch the P-Bit in action: [https://www.youtube.com/watch?v=ga6qz10fXHc](https://www.youtube.com/watch?v=ga6qz10fXHc)
-🌐 Learn more about the P-Bit: [https://www.powarsteam.es/en/pbit-environmental-mini-computer](https://www.powarsteam.es/en/pbit-environmental-mini-computer)
+---
 
-If you'd like to collaborate, contact us at **[info@powarsteam.com](mailto:info@powarsteam.com)**.
+## 🎓 Educational Use Only
+
+This project is released for **educational and non-commercial** purposes.
+
+Educators and students are encouraged to:
+- Use it in science & STEAM classrooms  
+- Extend or adapt it for experiments  
+- Share derivatives under the same license, with attribution  
+
+🔗 Learn more about the project:  
+https://www.powarsteam.es/en/pbit-environmental-mini-computer
+
+🎥 Watch a demo video:  
+https://www.youtube.com/watch?v=ga6qz10fXHc
+
+📧 Contact: [info@powarsteam.com](mailto:info@powarsteam.com)
 
 ---
 
@@ -105,16 +103,20 @@ If you'd like to collaborate, contact us at **[info@powarsteam.com](mailto:info@
 
 This project is licensed under:
 
-> **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+> **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**  
+> (CC BY-NC-SA 4.0)
 
-No commercial use is allowed. For licensing opportunities or commercial collaborations, contact us directly.
+- ✅ Use for educational purposes  
+- ❌ Commercial use prohibited  
+- 🔄 Must share under same terms  
+- 🧾 Attribution to POWAR STEAM SL required  
 
-See [`LICENSE`](./LICENSE) for full details.
+See [`LICENSE`](./LICENSE) for full terms.
 
 ---
 
-## 🧑‍💼 About POWAR STEAM
+## 🧑‍🏫 About POWAR STEAM
 
-POWAR STEAM SL is a social-impact edtech company based in Barcelona, Spain. We design and manufacture tangible tools that help children **understand how the natural world works** – and how they can become **environmental changemakers**.
+POWAR STEAM SL is a social-impact edtech startup based in Barcelona, Spain. We design and manufacture educational tools that combine design, science, and technology to help children explore the natural world and become **environmental changemakers**.
 
-Visit us at: 🌍 [www.powarsteam.com](https://www.powarsteam.com)
+🌍 [www.powarsteam.com](https://www.powarsteam.com)
